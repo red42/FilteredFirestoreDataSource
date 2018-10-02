@@ -50,8 +50,8 @@ class FilteredBatchedArray {
             // filter documents
             
             var filteredItems = [DocumentSnapshot]()
-            if self.filter != nil {
-                filteredItems = (snapshot?.documents.filter(self.filter!))!
+            if weakSelf!.filter != nil {
+                filteredItems = (snapshot?.documents.filter(weakSelf!.filter!))!
             }
 
             if (weakSelf?.isInSync)! {
