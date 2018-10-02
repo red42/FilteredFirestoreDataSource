@@ -9,6 +9,9 @@ The filter is a closure applicable to a [DocumentSnapshot] array. In other words
 
 ## Usage
 ```
+var dataSource:FilteredFirestoreCollectionViewDataSource?
+let goodIdArray = ["goodId_1", "goodId_2"]
+
 dataSource = collectionView.bind(toFirestoreQuery: query) { (collectionView, indexPath, documentSnapshot) -> UICollectionViewCell in
   // populateCell body
 }
