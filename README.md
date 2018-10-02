@@ -1,4 +1,4 @@
-# FilteredFirestoreDatasource
+# Filterable Firestore Datasource replacement for FirebaseUI-iOS
 Drop-in iOS filterable replacements for [FirebaseUI](https://github.com/firebase/FirebaseUI-iOS)'s FUIBatchedArray and FUIFirestoreCollectionViewDataSource in Swift.
 
 Unlike FirebaseUI on Android, the iOS FUIFirestoreCollectionViewDataSource is not easily extendable, so filtering the data is a challenge.
