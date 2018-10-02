@@ -54,12 +54,6 @@ class FilteredBatchedArray {
                 filteredItems = (snapshot?.documents.filter(self.filter!))!
             }
 
-//            for snapshot in (snapshot?.documents)! {
-//                if !(weakSelf?.idsToHide.contains(snapshot.documentID))! {
-//                    filteredItems.append(snapshot)
-//                }
-//            }
-            
             if (weakSelf?.isInSync)! {
                 diff = FUISnapshotArrayDiff(initialArray: weakSelf!.items, resultArray: filteredItems, documentChanges: (snapshot?.documentChanges)!)
             } else {
